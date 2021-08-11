@@ -1,0 +1,14 @@
+{
+  "name": "basic-batch",
+  "version": "1.0.4",
+  "description": "Basic result batching to easily process results to database or an http endpoint in groups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "short-unique-id": "^4.3.3"
+  }
+}

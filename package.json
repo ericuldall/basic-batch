@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "short-unique-id": "^4.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericuldall/basic-batch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericuldall/basic-batch/issues"
+  },
+  "homepage": "https://github.com/ericuldall/basic-batch#readme"
 }

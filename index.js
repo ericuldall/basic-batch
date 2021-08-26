@@ -32,6 +32,8 @@ class Batch extends EventEmitter {
 		if (Object.keys(this.processes).length === 0) {
 			if (this.queue.length) {
 				this.drainQueue();
+			} else {
+				this.emit('done');
 			}
 			this.running = false;
 		}

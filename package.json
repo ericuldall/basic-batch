@@ -1,6 +1,6 @@
 {
   "name": "basic-batch",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Basic result batching to easily process results to database or an http endpoint in groups",
   "main": "index.js",
   "scripts": {

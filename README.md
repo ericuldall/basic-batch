@@ -41,6 +41,10 @@ batch.on('processReady', ({ items, done }) => {
 	});
 });
 
+batch.on('done', () => {
+	console.log('All done!');
+});
+
 batch.push(setTimeout(1000, 100)); // valid promise
 batch.push(1000); // static value
 batch.push(new Promise((resolve, reject) => { reject('WTF'); })); // rejected promise

@@ -6,10 +6,14 @@ const BasicBatch = require('./index');
 const batch = new BasicBatch;
 
 batch.on('processReady', ({ items, done }) => {
-	items.then(res => {
+	items.then(async res => {
 		console.log(res);
+		await setTimeout(10000, 100);
 		done();
 	});
+});
+batch.on('done', () => {
+	console.log('Done');
 });
 
 batch.push(setTimeout(1000, 100));
